@@ -2,11 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body{
-    color: #0a0806;
+  color: #0a0806;
   background-color: #f2e9de;
   font-size: 23px;
   font-weight: 400;
@@ -33,7 +36,6 @@ svg{
   fill: black;
 }
 
-
 a{
   display: inline-block;
   text-decoration: none;
@@ -43,6 +45,10 @@ a{
 
 .header-logo{
   margin-right: auto;
+}
+
+p.brand{
+  display: none;
 }
 
 img{
@@ -73,10 +79,25 @@ a.reservation:hover{
 
 
 
-@media screen and (max-width: 900px){  
-  
+@media screen and (max-width: 900px){
+
   .header-container{
     margin: 5vh 5vw;
+  }
+
+  .menu-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  p.brand{
+    display: block;
+    font-size: 80px;
+    font-family: "Tangerine", cursive;
+    font-weight: 600;
+    font-style: normal;
   }
 
   .links-container{
