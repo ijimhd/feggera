@@ -225,7 +225,7 @@ p.par1-title{
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.50s ease-out;
     gap: 5px;
-    padding: 7vh 5vw;
+    padding: 3vh 5vw;
   }
 
   a.nav-link{
