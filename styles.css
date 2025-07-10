@@ -20,8 +20,6 @@ body{
   display: flex;
   align-items: center;
   padding: 2vw 10vw;
-  position: sticky;
-  top:0;
   background-color: #f2e9de;
 }
 
