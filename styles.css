@@ -181,6 +181,12 @@ a.hero-reservation{
     font-size: 1.4em;
   }
 
+  svg.open,
+  svg.close{
+    height: 2.5em;
+    width: 2.5em;
+  }
+
   .open-sidebar-button, .close-sidebar-button{
     padding: 20px;
     display: block;
