@@ -65,9 +65,10 @@ a:hover{
   color: #C9AB81;
 }
 
-a.reservation{
+a.button{
   color:#0a0806;
   border: 0.3em solid #C9AB81;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1em;
   font-weight: 500;
   padding: 0.8em;
@@ -75,7 +76,7 @@ a.reservation{
   cursor: pointer;
 }
 
-a.reservation:hover{
+a.button:hover{
   background-color: #C9AB81;
   color: #f2e9de;
   transform: scale(1.05);
@@ -129,6 +130,58 @@ a.reservation:hover{
 
 a.hero-reservation{
   color:#f2e9de;
+}
+
+.dining{
+  display:flex;
+  background-color: #f2e9de;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  padding: 10vw 10vw;
+  gap: 2em; 
+}
+
+.dining-text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  gap: 1.5em;
+  height: 100%;
+}
+
+.dining-text-container,
+.dining-image-container{
+  width: 100%;
+}
+
+
+
+img.dining-image{
+  width: auto;
+  height: 50vw;
+  object-fit: cover;
+}
+
+p.par1-title{
+  font-size: 2.2em;
+  font-weight: 500;
+}
+
+.title{
+  font-size: 1.4em;
+  font-weight: 400;
+  padding-bottom: 0.3em;
+}
+
+.dining-buttons{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.dining-learn-more-button{
+  background-color:#C9AB81;
 }
 
 
@@ -215,6 +268,35 @@ a.hero-reservation{
 
   .hero-image{
     height: 70vh;
+  }
+
+  .dining{
+    flex-direction:column-reverse;
+    
+  }
+
+  img.dining-image{
+    width: 100%;
+    height: auto;
+  }
+
+  p.par1-title{
+  font-size: 1.7em;
+  font-weight: 500;
+  }
+
+  .title{
+    font-size: 1.2em;
+    font-weight: 400;
+    padding-bottom: 0.3em;
+  }
+
+  .subtitle{
+    font-size: 0.8em;
+  }
+
+  .dining-buttons > a.button{
+    font-size: 0.8em;
   }
 
 }
