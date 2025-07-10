@@ -153,8 +153,6 @@ a.hero-reservation{
   width: 100%;
 }
 
-
-
 img.dining-image{
   width: auto;
   height: 50vw;
@@ -189,7 +187,13 @@ p.par1-title{
     font-size: 5vw;
   }
 
+  img.logo{
+    height: 4em;
+    width: 4em;
+}
+
   .header-container{
+    max-height: 20vh;
     padding: 4vh 5vw;
   }
 
