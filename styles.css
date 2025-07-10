@@ -10,15 +10,19 @@
 
 body{
   color: #0a0806;
-  background-color: #f2e9de;
+  background-color: #0F1D22;
   font-size: 1.5vw;
   font-weight: 400;
 }
 
+
 .header-container{
   display: flex;
   align-items: center;
-  margin: 2vw 10vw;
+  padding: 2vw 10vw;
+  position: sticky;
+  top:0;
+  background-color: #f2e9de;
 }
 
 .links-container{
@@ -87,6 +91,8 @@ a.reservation:hover{
 }
 
 .hero-content-container{
+  display: flex;
+  justify-content: center;
   flex: 4;
   background-color: #0F1D22;
 }
@@ -112,7 +118,6 @@ a.reservation:hover{
   font-style: normal;
   font-size: 5.5em;
   color:#C9AB81;
-  padding-top: 0.8em;
 }
 
 .hero-subtitle{
@@ -134,7 +139,7 @@ a.hero-reservation{
   }
 
   .header-container{
-    margin: 5vh 5vw;
+    padding: 4vh 5vw;
   }
 
   .menu-header{
@@ -146,7 +151,7 @@ a.hero-reservation{
 
   p.brand{
     display: block;
-    font-size: 80px;
+    font-size: 4em;
     font-family: "Tangerine", cursive;
     font-weight: 600;
     font-style: normal;
@@ -197,5 +202,14 @@ a.hero-reservation{
     left: 0;
     z-index: 9;
   }
+
+  .hero-container{
+    flex-direction: column;
+  }
+
+  .hero-image{
+    height: 70vh;
+  }
+
 }
 
