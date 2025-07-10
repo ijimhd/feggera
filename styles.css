@@ -73,7 +73,11 @@ a.reservation:hover{
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px){  
+  
+  .header-container{
+    margin: 5vh 5vw;
+  }
 
   .links-container{
     flex-direction: column;
@@ -88,7 +92,7 @@ a.reservation:hover{
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.50s ease-out;
     gap: 5px;
-    padding: 6.5vh 10vw;
+    padding: 7vh 5vw;
   }
 
   a.nav-link{
