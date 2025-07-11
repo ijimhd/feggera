@@ -184,7 +184,7 @@ p.par1-title{
 @media screen and (max-width: 900px){
 
   body{
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   img.logo{
@@ -226,6 +226,7 @@ p.par1-title{
     transition: 0.50s ease-out;
     gap: 5px;
     padding: 3vh 5vw;
+    overflow:auto;
   }
 
   a.nav-link{
@@ -302,4 +303,11 @@ p.par1-title{
   }
 
 }
+
+@media screen and (max-width: 650px){
+  body{
+  font-size: 5vw;
+  }
+}
+
 
