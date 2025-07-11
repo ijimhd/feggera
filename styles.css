@@ -136,7 +136,7 @@ a.hero-reservation{
   width: 100%;
   height: auto;
   align-items: stretch;
-  padding: 10vw 10vw;
+  padding: 10vw;
   gap: 2em; 
 }
 
@@ -159,9 +159,10 @@ img.dining-image{
   object-fit: cover;
 }
 
-p.par1-title{
+.main-title{
   font-size: 2.2em;
   font-weight: 500;
+  padding-bottom: 0.3em;
 }
 
 .title{
@@ -178,6 +179,50 @@ p.par1-title{
 
 .dining-learn-more-button{
   background-color:#C9AB81;
+}
+
+.ratings-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 5vw 10vw;
+  width: 100%;
+}
+
+.rating-boxes{
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+  color:#f2e9de;
+  width: 100%;
+}
+
+.rating-box{
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  border: 0.3em solid #C9AB81;
+  border-radius: 7px;
+  width: 50vw;
+}
+
+.ratings-title{
+  color:#C9AB81;
+}
+
+.ratings-subtitle,
+.comment{
+  font-size: 0.8em;
+  color: #f2e9de;
+}
+
+.info-image,
+.info-name{
+  font-size: 0.6em;
+}
+
+.info{
+  display: flex;
 }
 
 
@@ -281,7 +326,6 @@ p.par1-title{
 
   .dining{
     flex-direction:column-reverse;
-    
   }
 
   img.dining-image{
@@ -289,7 +333,7 @@ p.par1-title{
     height: auto;
   }
 
-  p.par1-title{
+  .main-title{
   font-size: 1.7em;
   font-weight: 500;
   }
@@ -308,11 +352,47 @@ p.par1-title{
     font-size: 0.8em;
   }
 
+  .ratings-container{
+    text-align: center;
+  }
+
+  .rating-boxes{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .rating-box{
+    width: 37.5vw;
+    gap: 4vw;
+  }
+
+  .info{
+    flex-direction: column;
+  }
+
 }
 
 @media screen and (max-width: 650px){
   body{
   font-size: 5vw;
+  }
+
+  .ratings-container{
+    gap: 7vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating-boxes{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .rating-box{
+    gap: 5vw;
+    padding-block: 5vw;
+    width: 60vw;
   }
 }
 
