@@ -316,16 +316,21 @@ img.dining-image{
     z-index: 9;
   }
 
+  .hero-content{
+    padding: 15vw 10vw;
+  }
+
   .hero-container{
     flex-direction: column;
   }
 
   .hero-image{
-    height: 70vh;
+    height: 82vh;
   }
 
   .dining{
     flex-direction:column-reverse;
+    padding: 15vw 10vw
   }
 
   img.dining-image{
@@ -354,6 +359,7 @@ img.dining-image{
 
   .ratings-container{
     text-align: center;
+    padding: 15vw 10vw;
   }
 
   .rating-boxes{
@@ -377,10 +383,19 @@ img.dining-image{
   font-size: 5vw;
   }
 
+  .hero-content{
+    padding: 20vw 10vw;
+  }
+
+  .dining{
+    padding: 20vw 10vw;
+  }
+
   .ratings-container{
     gap: 7vw;
     align-items: center;
     text-align: center;
+    padding: 20vw 10vw;
   }
 
   .rating-boxes{
