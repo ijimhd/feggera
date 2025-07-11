@@ -187,10 +187,16 @@ p.par1-title{
     font-size: 4vw;
   }
 
+  body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  }
+
   img.logo{
     height: 4em;
     width: 4em;
-}
+  }
 
   .header-container{
     max-height: 20vh;
