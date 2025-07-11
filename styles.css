@@ -136,7 +136,7 @@ a.hero-reservation{
   width: 100%;
   height: auto;
   align-items: stretch;
-  padding: 10vw;
+  padding: 8vw 10vw;
   gap: 2em; 
 }
 
@@ -185,7 +185,7 @@ img.dining-image{
   display: flex;
   flex-direction: column;
   gap: 3vw;
-  padding: 5vw 10vw;
+  padding: 8vw 10vw;
   width: 100%;
 }
 
@@ -359,7 +359,7 @@ img.dining-image{
 
   .ratings-container{
     text-align: center;
-    padding: 15vw 10vw;
+    padding: 10vw;
   }
 
   .rating-boxes{
@@ -395,7 +395,7 @@ img.dining-image{
     gap: 7vw;
     align-items: center;
     text-align: center;
-    padding: 20vw 10vw;
+    padding: 15vw 10vw;
   }
 
   .rating-boxes{
