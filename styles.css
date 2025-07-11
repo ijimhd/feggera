@@ -15,7 +15,6 @@ body{
   font-weight: 400;
 }
 
-
 .header-container{
   display: flex;
   align-items: center;
@@ -130,13 +129,16 @@ a.hero-reservation{
   color:#f2e9de;
 }
 
+.container{
+  padding: 8vw 10vw;
+}
+
 .dining{
   display:flex;
   background-color: #f2e9de;
   width: 100%;
   height: auto;
   align-items: stretch;
-  padding: 8vw 10vw;
   gap: 2em; 
 }
 
@@ -157,6 +159,7 @@ img.dining-image{
   width: auto;
   height: 50vw;
   object-fit: cover;
+  border-radius: 7px;
 }
 
 .main-title{
@@ -185,7 +188,6 @@ img.dining-image{
   display: flex;
   flex-direction: column;
   gap: 3vw;
-  padding: 8vw 10vw;
   width: 100%;
 }
 
@@ -206,12 +208,13 @@ img.dining-image{
   width: 50vw;
 }
 
-.ratings-title{
+.accent-title{
   color:#C9AB81;
 }
 
 .ratings-subtitle,
-.comment{
+.comment,
+.our-team-subtitle{
   font-size: 0.8em;
   color: #f2e9de;
 }
@@ -227,10 +230,6 @@ img.dining-image{
 
 .cooking{
   background-color: #f2e9de;
-}
-
-.cooking-container{
-  padding: 8vw 10vw;
 }
 
 .cooking-title{
@@ -251,6 +250,7 @@ img.dining-image{
   width: 37.5vw;
   height: auto;
   object-fit: cover;
+  border-radius: 7px;
 }
 
 .cooking-subheading{
@@ -261,6 +261,32 @@ img.dining-image{
 
 .cooking-buttons{
   padding-top: 3vw;
+}
+
+.our-team-image{
+  width: 25vw;
+  height: auto;
+  border-radius: 7px;
+  padding-bottom: 1vw;
+}
+
+.our-team-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team-subtitle{
+  color:#f2e9de;
+  padding-bottom: 4vw;
+}
+
+.our-team-name{
+  font-size: 1.4em;
+  color:#C9AB81;
+}
+
+.our-team-job{
+  color:#f2e9de;
 }
 
 @media screen and (max-width: 900px){
@@ -390,11 +416,13 @@ img.dining-image{
     padding-bottom: 0.3em;
   }
 
-  .cooking-subheading{
+  .cooking-subheading,
+  .our-team-name{
     font-size: 1em;
   }
 
-  .subtitle{
+  .subtitle,
+  .our-team-job{
     font-size: 0.8em;
   }
 
@@ -463,8 +491,18 @@ img.dining-image{
     width: 80vw;
   }
 
+  .our-team-image{
+    width: 37vw;
+  }
+
   .cooking-buttons{
     font-size:0.8em;
+  }
+
+  .our-team-content{
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 6vw;
   }
 }
 
