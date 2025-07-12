@@ -490,6 +490,14 @@ iframe{
     justify-content: space-evenly;
   }
 
+  div.footer-buttons > a.button{
+    font-size: 1.05em;
+  }
+
+  .footer-buttons{
+    gap: 3vw;
+  }
+
 }
 
 @media screen and (max-width: 650px){
