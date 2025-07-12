@@ -48,7 +48,7 @@ a{
   margin-right: auto;
 }
 
-p.brand{
+p.brand-mobile{
   display: none;
 }
 
@@ -90,7 +90,11 @@ a:hover{
 
 .hero-content-container{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 2em;
+  color:#f2e9de;
   flex: 4;
   background-color: #0F1D22;
 }
@@ -101,16 +105,7 @@ a:hover{
   object-fit:cover;
 }
 
-.hero-content{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2em;
-  color:#f2e9de;
-}
-
-.hero-title{
+.brand{
   font-family: "Tangerine", cursive;
   font-weight: 700;
   font-style: normal;
@@ -142,23 +137,16 @@ a.hero-reservation{
   gap: 2em; 
 }
 
-.dining-text-content{
+.dining-text-container{
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   gap: 1.5em;
-  height: 100%;
-}
-
-.dining-text-container,
-.dining-image-container{
-  width: 100%;
 }
 
 img.dining-image{
   width: auto;
   height: 50vw;
-  object-fit: cover;
   border-radius: 7px;
 }
 
@@ -184,11 +172,10 @@ img.dining-image{
   background-color:#C9AB81;
 }
 
-.ratings-container{
+.ratings{
   display: flex;
   flex-direction: column;
   gap: 3vw;
-  width: 100%;
 }
 
 .rating-boxes{
@@ -196,7 +183,6 @@ img.dining-image{
   justify-content: space-between;
   gap: 5vw;
   color:#f2e9de;
-  width: 100%;
 }
 
 .rating-box{
@@ -212,9 +198,7 @@ img.dining-image{
   color:#C9AB81;
 }
 
-.ratings-subtitle,
-.comment,
-.our-team-subtitle{
+.smallest-text{
   font-size: 0.8em;
   color: #f2e9de;
 }
@@ -229,11 +213,10 @@ img.dining-image{
 }
 
 .cooking{
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
   background-color: #f2e9de;
-}
-
-.cooking-title{
-  padding-bottom: 3vw;
 }
 
 .cooking-content{
@@ -249,7 +232,6 @@ img.dining-image{
 .cooking-image{
   width: 37.5vw;
   height: auto;
-  object-fit: cover;
   border-radius: 7px;
 }
 
@@ -257,10 +239,6 @@ img.dining-image{
   font-size: 1.2em;
   padding-top: 1.5vw;
   padding-bottom: 1vw;
-}
-
-.cooking-buttons{
-  padding-top: 3vw;
 }
 
 .our-team-image{
@@ -289,6 +267,58 @@ img.dining-image{
   color:#f2e9de;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+  background-color: #f2e9de;
+}
+
+.footer-brand{
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.footer-logo{
+  height: 11em;
+  width: 11em;
+}
+
+.footer-brand-name{
+  font-size: 8em;
+  color:#0a0806;
+}
+
+.footer-links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+  width: 100%;
+}
+
+.page-redirect,
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  font-size: 1.3em;
+}
+
+.footer-buttons{
+  display: flex;
+  gap: 1vw;
+  font-size: 1.2em;
+}
+
+iframe{
+  width: 100%;
+  height: 60vh;
+}
+
+
 @media screen and (max-width: 900px){
 
   body{
@@ -296,9 +326,9 @@ img.dining-image{
   }
 
   body.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
 
   img.logo{
@@ -318,7 +348,7 @@ img.dining-image{
     margin-bottom: 30px;
   }
 
-  p.brand{
+  p.brand-mobile{
     display: block;
     font-size: 4em;
     font-family: "Tangerine", cursive;
@@ -351,8 +381,7 @@ img.dining-image{
     font-size: 1.4em;
   }
 
-  svg.open,
-  svg.close{
+  svg{
     height: 2.5em;
     width: 2.5em;
   }
@@ -379,7 +408,11 @@ img.dining-image{
     z-index: 9;
   }
 
-  .hero-content{
+  .container{
+    padding: 10vw;
+  }
+
+  .hero-content-container{
     padding: 15vw 10vw;
   }
 
@@ -406,8 +439,8 @@ img.dining-image{
   }
 
   .main-title{
-  font-size: 1.7em;
-  font-weight: 500;
+    font-size: 1.7em;
+    font-weight: 500;
   }
 
   .title{
@@ -430,10 +463,6 @@ img.dining-image{
     font-size: 0.8em;
   }
 
-  .ratings-container{
-    padding: 10vw;
-  }
-
   .rating-boxes{
     justify-content: center;
     flex-wrap: wrap;
@@ -448,24 +477,32 @@ img.dining-image{
     flex-direction: column;
   }
 
+  footer{
+    gap: 6vw;
+  }
+
+  .footer-brand{
+    font-size: 0.8em;
+  }
+  
+  .footer-links{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
 }
 
 @media screen and (max-width: 650px){
   body{
-  font-size: 5vw;
+    font-size: 5vw;
   }
 
-  .hero-content{
+  .container{
     padding: 20vw 10vw;
   }
 
-  .dining{
-    padding: 20vw 10vw;
-  }
-
-  .ratings-container{
+  .ratings{
     gap: 7vw;
-    padding: 15vw 10vw;
   }
 
   .rating-boxes{
@@ -477,10 +514,6 @@ img.dining-image{
     gap: 5vw;
     padding-block: 5vw;
     width: 100%;
-  }
-
-  .cooking-container{
-    padding: 15vw 10vw;
   }
   .cooking-content{
     flex-direction: column;
@@ -503,6 +536,14 @@ img.dining-image{
     flex-wrap:wrap;
     justify-content: center;
     gap: 6vw;
+  }
+
+  footer{
+    font-size: 0.6em;
+  }
+
+  iframe{
+    height: 50vh;
   }
 }
 
