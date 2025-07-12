@@ -490,12 +490,19 @@ iframe{
     justify-content: space-evenly;
   }
 
+  .page-redirect,
+  .contact-info{
+    gap: 4vw;
+    font-size: 1.4em;
+  }
+
   div.footer-buttons > a.button{
     font-size: 1.05em;
   }
 
   .footer-buttons{
     gap: 3vw;
+    font-size: 1.2em;
   }
 
 }
