@@ -192,6 +192,7 @@ img.dining-image{
   border: 0.3em solid #C9AB81;
   border-radius: 7px;
   width: 50vw;
+  gap: 2vw;
 }
 
 .accent-title{
@@ -316,6 +317,31 @@ footer{
 iframe{
   width: 100%;
   height: 60vh;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.reveal.animate {
+  animation: transitionIn 1s forwards;
+  opacity: 1;
+}
+
+.main-title.reveal.animate {
+  animation: transitionIn 0.5s forwards;
+  opacity: 1;
+}
+
+
+@keyframes transitionIn {
+  from {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 
