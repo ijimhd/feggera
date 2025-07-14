@@ -325,12 +325,12 @@ iframe{
 }
 
 .reveal.animate {
-  animation: transitionIn 1s forwards;
+  animation: transitionIn 1.3s forwards;
   opacity: 1;
 }
 
 .main-title.reveal.animate {
-  animation: transitionIn 0.5s forwards;
+  animation: transitionIn 0.8s forwards;
   opacity: 1;
 }
 
